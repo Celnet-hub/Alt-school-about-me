@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Register with Alt School</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<nav class="navbar">
+			<!-- LOGO -->
+			<div class="logo">DCN</div>
+			<ul class="nav-links">
+				<!-- NAVIGATION MENUS -->
+				<div class="menu">
+					<li class="services"><a href="/">Home</a></li>
+					<li><a href="register.html">Register</a></li>
+				</div>
+			</ul>
+		</nav>
+
+		<div class="container text-center">
+			<div class="row">
+				<div class="col form-greeting">
+					<h1>
+						Learn highly sought <br />
+						after skills <br />
+						without hassle.
+					</h1>
+					<p>
+						Earn a Diploma in highly-sought after skills.
+					</p>
+				</div>
+				<div class="col">
+					<h2 class="text-center">Application Form</h2>
+					<p class="text-center">Fill in your details</p>
+
+					<form>
+						<div class="row mb-3">
+							<div class="col">
+								<label for="firstName" class="form-label">First Name</label>
+								<input
+									type="text"
+									class="form-control"
+									id="firstName"
+									placeholder="Enter your first name"
+									required
+								/>
+							</div>
+							<div class="col">
+								<label for="lastName" class="form-label">Last Name</label>
+								<input
+									type="text"
+									class="form-control"
+									id="lastName"
+									placeholder="Enter your last name"
+									required
+								/>
+							</div>
+						</div>
+
+						<div class="row mb-3">
+							<div class="col">
+								<label for="gender" class="form-label">Gender</label>
+								<select class="form-select" id="gender" required>
+									<option value="" selected disabled>Select gender</option>
+									<option value="male">Male</option>
+									<option value="female">Female</option>
+								</select>
+							</div>
+
+							<div class="col">
+								<div class="mb-3">
+									<label for="dob" class="form-label">Date of Birth</label>
+									<input
+										type="text"
+										class="form-control"
+										id="dob"
+										placeholder="mm/dd/yyyy"
+										required
+									/>
+								</div>
+							</div>
+						</div>
+
+						<div class="row mb-3">
+							<!-- Email Address -->
+							<div class="col">
+								<label for="email" class="form-label">Email Address</label>
+								<input
+									type="email"
+									class="form-control"
+									id="email"
+									placeholder="Enter email address"
+									required
+								/>
+							</div>
+
+							<!-- Education -->
+							<div class="col">
+								<label for="education" class="form-label"
+									>Education Level</label
+								>
+								<select class="form-select" id="education" required>
+									<option value="" selected disabled>
+										Select level of education
+									</option>
+									<option value="Bsc">Bsc</option>
+									<option value="Msc">Msc</option>
+									<option value="Diploma">Diploma</option>
+									<option value="Phd">Doctorate (PhD)</option>
+									<option value="highschool">
+										High School / Secondary School
+									</option>
+									<option value="undergrad">Under Graduate</option>
+									<option value="midschool">Junior / Middle School</option>
+									<option value="postgrad">Post Graduate</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="row mb-3">
+							<!-- Country -->
+							<div class="col">
+								<label for="country" class="form-label">Country</label>
+								<select class="form-select" id="country" required>
+									<option value="" selected disabled>
+										Select your country
+									</option>
+								</select>
+							</div>
+
+							<!-- State of Residence -->
+							<div class="col">
+								<label for="state" class="form-label"
+									>State/City of Residence
+								</label>
+								<input
+									type="text"
+									class="form-control"
+									id="state"
+									placeholder="Enter your state of residence"
+									required
+								/>
+							</div>
+						</div>
+
+						<div class="row mb-3">
+							<!-- Employment -->
+							<div class="col">
+								<label for="employment" class="form-label"
+									>Employment Status
+								</label>
+								<select class="form-select" id="employment" required>
+									<option value="" selected disabled>
+										Select employment status
+									</option>
+									<option value="employed">employed</option>
+									<option value="unemployed">unemployed</option>
+									<option value="selfemployed">self-employed</option>
+								</select>
+							</div>
+
+							<!-- Phone Number -->
+							<div class="col">
+								<label for="phoneNumber" class="form-label">Phone Number</label>
+								<input
+									type="tel"
+									class="form-control"
+									id="phoneNumber"
+									placeholder="Enter your phone number"
+									pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+									required
+								/>
+							</div>
+						</div>
+
+						<div class="row mb-3">
+							<!-- Choosing School -->
+							<div class="col">
+								<label for="altschool" class="form-label">Choose School </label>
+								<select class="form-select" id="altschool" required>
+									<option value="" selected disabled>Select school</option>
+									<option value="scheng">School of Engineering</option>
+									<option value="schproduct">School of Product</option>
+									<option value="schdata">School of Data</option>
+									<option value="schbusiness">School of Business</option>
+									<option value="schcreative">
+										School of Creative Economy
+									</option>
+								</select>
+							</div>
+
+							<!-- Course -->
+							<div class="col">
+								<label for="course" class="form-label"
+									>Choose Course of Study</label
+								>
+								<select class="form-select" id="course" required>
+									<option value="" selected disabled>Select course</option>
+								</select>
+							</div>
+						</div>
+						<div class="row mb-3">
+							<!-- how did you hear about us -->
+							<div class="col">
+								<label for="aboutus" class="form-label"
+									>How did you hear about us?
+								</label>
+								<select class="form-select" id="aboutus" required>
+									<option value="" selected disabled>Select channel</option>
+									<option value="scheng">School of Engineering</option>
+									<option value="schproduct">School of Product</option>
+									<option value="schdata">School of Data</option>
+									<option value="schbusiness">School of Business</option>
+									<option value="schcreative">
+										School of Creative Economy
+									</option>
+								</select>
+							</div>
+
+							<!-- Discount code -->
+							<div class="col">
+								<label for="scholarship" class="form-label"
+									>Scholarship/Discount Code (optional)
+								</label>
+								<input
+									type="text"
+									class="form-control"
+									id="scholarship"
+									placeholder="Scholarship or student ID or discount codes"
+									required
+								/>
+							</div>
+						</div>
+						<br />
+						<br />
+						<p>
+							By clicking continue, I agree to Terms of Use and acknowledge that
+							I have read the Privacy Policy.
+						</p>
+						<br />
+						<div class="mb-3">
+							<button type="submit" class="btn btn-primary">Proceed</button>
+						</div>
+					</form>
+
+					<p class="text-center">
+						Already have an account? <a href="#">Sign In</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Bootstrap Javascript -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+
+		<script>
+			// JavaScript to populate the country dropdown
+			const countryDropdown = document.getElementById("country");
+
+			const countries = [
+				"Afghanistan",
+				"Albania",
+				"Algeria",
+				"Andorra",
+				"Angola",
+				"Antigua and Barbuda",
+				"Argentina",
+				"Armenia",
+				"Australia",
+				"Austria",
+				"Azerbaijan",
+				"Bahamas",
+				"Bahrain",
+				"Bangladesh",
+				"Barbados",
+				"Belarus",
+				"Belgium",
+				"Belize",
+				"Benin",
+				"Bhutan",
+				"Bolivia",
+				"Bosnia and Herzegovina",
+				"Botswana",
+				"Brazil",
+				"Brunei",
+				"Bulgaria",
+				"Burkina Faso",
+				"Burundi",
+				"Côte d'Ivoire",
+				"Cabo Verde",
+				"Cambodia",
+				"Cameroon",
+				"Canada",
+				"Central African Republic",
+				"Chad",
+				"Chile",
+				"China",
+				"Colombia",
+				"Comoros",
+				"Congo (Congo-Brazzaville)",
+				"Costa Rica",
+				"Croatia",
+				"Cuba",
+				"Cyprus",
+				"Czechia (Czech Republic)",
+				"Democratic Republic of the Congo",
+				"Denmark",
+				"Djibouti",
+				"Dominica",
+				"Dominican Republic",
+				"Ecuador",
+				"Egypt",
+				"El Salvador",
+				"Equatorial Guinea",
+				"Eritrea",
+				"Estonia",
+				"Eswatini",
+				"Ethiopia",
+				"Fiji",
+				"Finland",
+				"France",
+				"Gabon",
+				"Gambia",
+				"Georgia",
+				"Germany",
+				"Ghana",
+				"Greece",
+				"Grenada",
+				"Guatemala",
+				"Guinea",
+				"Guinea-Bissau",
+				"Guyana",
+				"Haiti",
+				"Holy See",
+				"Honduras",
+				"Hungary",
+				"Iceland",
+				"India",
+				"Indonesia",
+				"Iran",
+				"Iraq",
+				"Ireland",
+				"Israel",
+				"Italy",
+				"Jamaica",
+				"Japan",
+				"Jordan",
+				"Kazakhstan",
+				"Kenya",
+				"Kiribati",
+				"Kuwait",
+				"Kyrgyzstan",
+				"Laos",
+				"Latvia",
+				"Lebanon",
+				"Lesotho",
+				"Liberia",
+				"Libya",
+				"Liechtenstein",
+				"Lithuania",
+				"Luxembourg",
+				"Madagascar",
+				"Malawi",
+				"Malaysia",
+				"Maldives",
+				"Mali",
+				"Malta",
+				"Marshall Islands",
+				"Mauritania",
+				"Mauritius",
+				"Mexico",
+				"Micronesia",
+				"Moldova",
+				"Monaco",
+				"Mongolia",
+				"Montenegro",
+				"Morocco",
+				"Mozambique",
+				"Myanmar",
+				"Namibia",
+				"Nauru",
+				"Nepal",
+				"Netherlands",
+				"New Zealand",
+				"Nicaragua",
+				"Niger",
+				"Nigeria",
+				"North Korea",
+				"North Macedonia",
+				"Norway",
+				"Oman",
+				"Pakistan",
+				"Palau",
+				"Palestine State",
+				"Panama",
+				"Papua New Guinea",
+				"Paraguay",
+				"Peru",
+				"Philippines",
+				"Poland",
+				"Portugal",
+				"Qatar",
+				"Romania",
+				"Russia",
+				"Rwanda",
+				"Saint Kitts and Nevis",
+				"Saint Lucia",
+				"Saint Vincent and the Grenadines",
+				"Samoa",
+				"San Marino",
+				"Sao Tome and Principe",
+				"Saudi Arabia",
+				"Senegal",
+				"Serbia",
+				"Seychelles",
+				"Sierra Leone",
+				"Singapore",
+				"Slovakia",
+				"Slovenia",
+				"Solomon Islands",
+				"Somalia",
+				"South Africa",
+				"South Korea",
+				"South Sudan",
+				"Spain",
+				"Sri Lanka",
+				"Sudan",
+				"Suriname",
+				"Sweden",
+				"Switzerland",
+				"Syria",
+				"Tajikistan",
+				"Tanzania",
+				"Thailand",
+				"Timor-Leste",
+				"Togo",
+				"Tonga",
+				"Trinidad and Tobago",
+				"Tunisia",
+				"Turkey",
+				"Turkmenistan",
+				"Tuvalu",
+				"Uganda",
+				"Ukraine",
+				"United Arab Emirates",
+				"United Kingdom",
+				"United States of America",
+				"Uruguay",
+				"Uzbekistan",
+				"Vanuatu",
+				"Venezuela",
+				"Vietnam",
+				"Yemen",
+				"Zambia",
+				"Zimbabwe",
+			];
+
+			countries.forEach((country) => {
+				const option = document.createElement("option");
+				option.value = country;
+				option.text = country;
+				countryDropdown.add(option);
+			});
+		</script>
+
+		<script>
+			const schoolDropdown = document.getElementById("altschool");
+			const courseDropdown = document.getElementById("course");
+
+			// Mapping of schools to courses
+			const coursesBySchool = {
+				scheng: [
+					"Frontend Engineering",
+					"Backend Engineering",
+					"Cloud Engineering",
+				],
+				schproduct: ["Product Management", "Product Design"],
+				schdata: ["Data Science", "Machine Learning"],
+				schbusiness: ["Business Administration", "Finance"],
+				schcreative: ["Graphic Design", "Digital Marketing"],
+			};
+
+			schoolDropdown.addEventListener("change", () => {
+				const selectedSchool = schoolDropdown.value;
+				const courses = coursesBySchool[selectedSchool] || [];
+
+				// Clear existing options
+				courseDropdown.innerHTML =
+					'<option value="" selected disabled>Select course</option>';
+
+				// Populate options based on the selected school
+				courses.forEach((course) => {
+					const option = document.createElement("option");
+					option.value = course;
+					option.text = course;
+					courseDropdown.add(option);
+				});
+			});
+		</script>
+	</body>
+</html>
